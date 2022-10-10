@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar-brand{
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+}
+.navbar-brand img{
+    height: 100%;
+    width: 100%;
+}
+.nav-item{
+   
+    margin-left: 15px;
+}
+.image{
+background-color: transparent;
+height: 100px;
+width:100px;
+transform: scale(2);
+padding-left: 15px;
+margin-right:10px ;}
+
+
+
+#one{
+    transition:ease-in 0.3s;
+    padding-right: 10px;
+}
+#one:hover{
+    transform:scale(1.1);
+}
+
+#two{
+    transition:ease-in 0.3s;
+    padding-left: 10px;
+}
+#two:hover{
+    transform:scale(1.1);
+}
