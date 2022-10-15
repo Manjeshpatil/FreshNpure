@@ -42,27 +42,48 @@ body{
     
 }
 .card{
-border: 4px solid rgb(4, 4, 4);
+
 
  object-fit: contain;
  text-align: center;
  transition: ease 0.8s;
+ border-radius: 0%;
 
 }
-.card .btn{
+/* .card .btn{
     margin-top:10px;
-}
+} */
 .card:hover{
-    border: 2px solid rgb(0, 255, 0);
-    transform: scale(0.9);
+    border: 1.5px solid rgb(0, 255, 0);
+    transform: scale(0.95);
   
   }
 #con{
     position: sticky;
 }
-
-
-
+span{
+    text-decoration: line-through;
+}
+.card .card-body{
+    position:absolute;
+    left:260px;
+    top:35px;
+    
+}
+.card .card-body .btn{
+    width:80px;
+    height:40px;
+}
+.card .card-title{
+    position: relative;
+   
+}
+.card .card-img-top {
+    position: relative;
+    top:4px;
+    width:10px;
+    height:100px;
+}
 
 
 
