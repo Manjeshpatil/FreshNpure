@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
+const path = require('path');
 const jwt = require('jsonwebtoken');
 const { check, validationResult } = require('express-validator');
 const User = require('../models/user.js');
@@ -35,17 +36,19 @@ router.post(
         password,
       });
       const salt = await bcrypt.genSalt(10);
+      const subPath = path.join(__dirname, '../registrationSubmit.html');
       user.password = await bcrypt.hash(password, salt);
       await user.save();
       const secretKey = process.env.SECRET_KEY;
       const payload = {
         user: {
-          id: user.id,
+          name: user.name,
+          email: user.email,
         },
       };
       jwt.sign(payload, secretKey, { expiresIn: 360000 }, (err, token) => {
         if (err) throw err;
-        res.json({ token });
+        res.sendFile(subPath);
       });
     } catch (err) {
       console.error(err.message);

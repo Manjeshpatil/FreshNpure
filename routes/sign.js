@@ -5,7 +5,7 @@ const { check, validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const auth = require('../config/authMiddleware.js');
-
+const path = require('path');
 //GET the details of the user basesd on the token
 //GET :: http://localhost:5000/api/signin
 router.get('/', auth, async (req, res) => {
@@ -31,6 +31,7 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
+    const dir_path = path.join(__dirname, '../loginSubmit.html');
     const { email, password } = req.body;
     try {
       const user = await User.findOne({ email });
@@ -44,10 +45,15 @@ router.post(
           },
         };
         const secretKey = process.env.SECRET_KEY;
-        jwt.sign(payload, secretKey, { expiresIn: 36000 }, (err, token) => {
-          if (err) throw err;
-          res.json({ token });
-        });
+        jwt.sign(
+          payload,
+          secretKey,
+          { expiresIn: 36000 },
+          async (err, token) => {
+            if (err) throw err;
+            res.sendFile(dir_path);
+          }
+        );
       }
     } catch (err) {
       console.error(err);
