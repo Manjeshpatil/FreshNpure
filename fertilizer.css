@@ -84,6 +84,7 @@ box-shadow: 3px 3px 10px 1px rgb(151, 220, 158);
 }
 .card .card-title{
     position: relative;
+    font-weight: 700;
    
 }
 .card .card-img-top{
@@ -106,46 +107,46 @@ box-shadow: 3px 3px 10px 1px rgb(151, 220, 158);
 @media  screen and (max-width:340px) {
     
     #cardf1{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 15rem;
     }
     #cardf1 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cardf2{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 17rem;
     }
     #cardf2 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cardf3{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cardf3 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cardf4{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cardf4 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cardf5{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cardf5 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cardf6{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cardf6 .card-title{
-        top: 20px;
+        top: 12px;
     }
 }
 

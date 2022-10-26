@@ -81,6 +81,7 @@ body{
 }
 .card .card-title{
     position: relative;
+    font-weight: 700;
    
 }
 .card .card-img-top {
@@ -104,46 +105,46 @@ body{
 @media  screen and (max-width:340px) {
     
     #cards1{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 15rem;
     }
     #cards1 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cards2{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 17rem;
     }
     #cards2 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cards3{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cards3 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cards4{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cards4 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cards5{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cards5 .card-title{
-        top: 20px;
+        top: 12px;
     }
     #cards6{
-        width: 17rem;
-        height: 13rem;
+        width: 18rem;
+        height: 14rem;
     }
     #cards6 .card-title{
-        top: 20px;
+        top: 12px;
     }
 }
 
